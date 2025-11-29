@@ -32,7 +32,7 @@ It serves as a digital identity for recruiters and opportunities.
 
 🌐 Live Demo
 
-👉 
+👉 https://aikavya.github.io/PotfolioMade/
 
 🤝 Connect With Me
 
