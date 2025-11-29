@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: rgb(249, 249, 249);
+    --brand-blue: rgb(68, 68, 176);
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevents side scrolling */
+}
+
+/* Main container */
+.body {
+    max-width: 80%;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 0;
+    margin: auto;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+
+   
+
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(15, 15, 15);
+    z-index: 9999;
+}
+main{
+    padding-top: 100px;
+}
+
+/* --- HAMBURGER MENU HIDDEN LOGIC --- */
+#nav-check {
+    display: none;
+}
+.nav-icon {
+    display: none; /* Hidden on Desktop */
+}
+/* ----------------------------------- */
+
+.bt {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 16px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+    white-space: nowrap;
+}
+
+.bt:hover {
+    background-color: var(--brand-blue);
+    color: #f3f3f3;
+}
+
+.kp2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero_h1, .hero_h12, .hero_h13 {
+    margin-top: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 95px;
+    color: #f3f3f3;
+    align-self: center;
+    text-align: center;
+}
+
+.hero_h1 { margin-top: 40px; }
+.hero_h12 { letter-spacing: 2px; }
+.hero_h13 { font-weight: 700; letter-spacing: 3px; }
+
+.hero_span { color: rgb(140, 74, 255); }
+.hero_span2 { font-weight: 800; letter-spacing: 4px; color: #ffffff; }
+
+#hero {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: rgb(102, 99, 117);
+    align-self: center;
+    text-align: center;
+}
+
+.button_hero {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Build {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 16px;
+    background-color: var(--brand-blue);
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+}
+
+.Build:hover, .Build:link {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+main {
+    padding-top: 150px;
+}
+
+.maindiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 30px;
+}
+
+.svg {
+    height: 400px;
+    max-width: 100%;
+}
+
+.svg1 {
+    height: 350px;
+    position: relative;
+    transform: translateX(25%);
+    max-width: 100%;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px;
+}
+
+.div211 {
+    color: rgb(103, 103, 218);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.div22 {
+    color: rgb(234, 234, 243);
+    font-size: 25px;
+    font-family: 'Patrick Hand', sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.skills {
+    padding-top: 70px;
+}
+
+.p1 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(164, 162, 167);
+    text-decoration: none;
+}
+
+.grid_skills {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.svg3 {
+    width: 100px;
+    height: 100px;
+}
+
+.grids {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid var(--brand-blue);
+    border-radius: 5px;
+    color: rgb(164, 162, 167);
+    transition: 0.25s ease-in;
+    padding: 15px;
+}
+
+.grids:hover {
+    border: 2px solid rgb(158, 158, 158);
+    transform: scale(1.15, 1.15);
+}
+
+.pr1 {
+    color: rgb(164, 162, 167);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.projects {
+    padding-top: 70px;
+}
+
+.grids_projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    padding-top: 20px;
+    border-top: 3px solid rgb(32, 25, 25);
+}
+
+.sv { height: 90%; }
+
+.ab {
+    padding-right: 20%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.25s ease-in;
+}
+
+.ba {
+    color: rgb(89, 89, 138);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.25s ease-in;
+}
+
+.ab:hover { color: rgb(89, 89, 138); }
+.ba:hover { color: white; }
+
+.pr2 {
+    color: rgb(164, 162, 167);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.Background {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.edu-card {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid var(--brand-blue);
+    padding: 20px 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edu-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--brand-blue);
+    margin-bottom: 10px;
+}
+
+.edu-degree {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.edu-college {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+    margin-bottom: 15px;
+}
+
+.edu-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: white;
+}
+
+.connect {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.connect-title {
+    font-size: 28px;
+    color: var(--brand-blue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.connect-sub {
+    font-size: 16px;
+    color: rgb(164, 162, 167);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.connect-box {
+    background-color: black;
+    border: 2px solid var(--brand-blue);
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.25s ease-in-out;
+}
+
+.connect-box:hover {
+    transform: scale(1.1);
+    border-color: white;
+}
+
+.connect-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.connect-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect-form input,
+.connect-form textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid var(--brand-blue);
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.connect-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+.send-btn {
+    background-color: var(--brand-blue);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    font-weight: 600;
+}
+
+.send-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.p23 {
+    padding-top: 10px;
+    color: var(--brand-blue);
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.thoughts {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 3px solid var(--brand-blue);
+    border-radius: 5px;
+    justify-content: space-between;
+    transition: 0.25s ease-in;
+    padding: 15px;
+    align-items: center;
+}
+
+.svg4 {
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.resume {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thoughts:hover {
+    border: 2px solid rgb(158, 158, 158);
+    transform: scale(1.15, 1.15);
+}
+
+.footer {
+    background: rgb(15, 15, 15);
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.footer-subtitle {
+    font-size: 15px;
+    opacity: 0.75;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 0;
+    margin: 15px 0 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a, .footer-socials a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    opacity: 1;
+    color: var(--brand-blue);
+}
+
+.footer-cta {
+    margin-top: 22px;
+    font-size: 15px;
+    color: var(--brand-blue);
+    font-weight: 500;
+}
+
+.footer-copy {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.imgf {
+    height: 30px;
+    padding-left: 5px;
+    transition: 0.25s ease-in;
+}
+
+.imgf:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .body { max-width: 95%; }
+    .hero_h1, .hero_h12, .hero_h13 { font-size: 60px; }
+    .grid_skills { grid-template-columns: repeat(3, 1fr); }
+    .grids_projects { column-gap: 20px; }
+    .ab { padding-right: 20px; font-size: 1.5rem; }
+    .nav{
+         padding: 0 10px;
+         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Layout Adjustments */
+    .body {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .nav {
+        padding: 0 10px;
+        width:100%;
+     
+    }
+
+    /* 2. Fix Giant Fonts */
+    .hero_h1, .hero_h12, .hero_h13 {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+    
+    .div211 { font-size: 30px; }
+    .div22 { font-size: 18px; letter-spacing: 1px; }
+
+    /* 3. Stack Grids to Single Column */
+    .maindiv {
+        grid-template-columns: 1fr;
+    }
+
+    .svg1 {
+        transform: none; /* Fix the side scroll issue */
+        width: 100%;
+        height: auto;
+    }
+    
+    .svg {
+        height: auto;
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Skills: 2 columns on mobile looks better than 1 */
+    .grid_skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects: Stack vertically */
+    .grids_projects {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .Background {
+        grid-template-columns: 1fr;
+    }
+
+    .connect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Thoughts / About Me Section */
+    .thoughts {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 4. HAMBURGER MENU LOGIC */
+    .nav-icon {
+        display: block; /* Show the 3 lines */
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .nav-icon span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    .kp2 {
+        display: none; /* Hide links by default */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--brand-blue); /* RGB(68,68,176) */
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 1000;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Menu Item Styles */
+    .kp2 .bt {
+        background-color: transparent;
+        color: white; /* White text */
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .kp2 .bt:hover {
+        background-color: white;
+        color: var(--brand-blue);
+    }
+
+    /* The Trigger: When Checkbox is checked -> Show Menu */
+    #nav-check:checked ~ .kp2 {
+        display: flex;
+    }
+
+    /* Animation for Hamburger Icon (Optional flair) */
+    #nav-check:checked ~ .nav-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #nav-check:checked ~ .nav-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    #nav-check:checked ~ .nav-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -8px);
+    }
+}
